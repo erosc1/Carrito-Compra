@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Carrito de Compras</h1>
+    <div class="productos">
+        <div class="producto">
+            <img src="mesa.jpg" alt="Mesa">
+            <p>Mesa</p>
+            <p>100€</p>
+            <button onclick="agregarAlCarrito('Mesa', 100)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="silla.jpg" alt="Silla">
+            <p>Silla</p>
+            <p>30€</p>
+            <button onclick="agregarAlCarrito('Silla', 30)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="maceta.jpg" alt="Maceta">
+            <p>Planta</p>
+            <p>10€</p>
+            <button onclick="agregarAlCarrito('Planta', 10)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="cahon.jpg" alt="Cajón">
+            <p>Armario</p>
+            <p>200€</p>
+            <button onclick="agregarAlCarrito('Armario', 200)">Comprar</button>
+        </div>
+    </div>
+
+    <div class="carrito">
+        <h2>Carrito de compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Unidades</th>
+                    <th>Artículo</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-body">
+                <tr>
+                    <td colspan="6">Carrito vacío, empieza a comprar</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="botones-carrito">
+            <button class="btn-pagar" onclick="pagar()">Pagar</button>
+            <button class="btn-eliminar-todo" onclick="eliminarTodo()">Eliminar Todo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+h1, h2 {
+    text-align: center;
+}
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.producto {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los contenedores de los productos */
+.producto {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    width: 150px; /* Define un ancho fijo para los productos */
+}
+
+/* Estilo para las imágenes */
+.producto img {
+    width: 100%;
+    height: 150px; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen para que encaje sin deformarse */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+    border: 1px solid #ccc; /* Opcional: borde alrededor de las imágenes */
+}
+
+/* Estilo para los botones */
+.producto button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Botón del mismo ancho que el contenedor */
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
+
+.producto img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.producto button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.producto button:hover {
+    background-color: #45a049;
+}
+.carrito {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+.btn-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-eliminar:hover {
+    background-color: #c0392b;
+}
+.btn-pagar {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-pagar:hover {
+    background-color: #2980b9;
+}
+
+.btn-eliminar-todo {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-eliminar-todo:hover {
+    background-color: #c0392b;
+}
+
+td .btn-eliminar,
+td .btn-eliminar-todo-producto {
+    margin-right: 5px; /* Espaciado entre los botones */
+}
+
+.btn-eliminar-todo-producto {
+    background-color: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-eliminar-todo-producto:hover {
+    background-color: #e68900;
+}
